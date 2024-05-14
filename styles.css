@@ -404,3 +404,68 @@
     transition-duration: 0s;
   }
 }
+
+/* Add this at the end of your CSS file */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .content {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    text-align: center;
+  }
+
+  .content__container {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .profile {
+    position: static;
+    padding: 0;
+    text-align: center;
+  }
+
+  .listo {
+    position: static;
+    width: auto;
+    bottom: auto;
+    left: auto;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .roles {
+    height: auto;
+    overflow: visible;
+  }
+
+  .waves-container {
+    display: none; /* Hide waves on smaller screens */
+  }
+
+  .page-content {
+    margin: 20px auto; /* Adjust margin for smaller screens */
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card:before {
+    background-position: center; /* Center background image */
+  }
+
+  .content2 {
+    padding: 1rem 0;
+    transform: none;
+  }
+}
