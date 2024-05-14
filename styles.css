@@ -407,9 +407,9 @@
 
 /* Add this at the end of your CSS file */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   body {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 7px; /* Adjust font size for smaller screens */
   }
 
   .content {
