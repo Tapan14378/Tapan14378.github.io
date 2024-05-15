@@ -408,7 +408,7 @@
 }
 
 /* Add this at the end of your CSS file */
-@media (max-width: 380px) {
+@media (max-width: 379px) {
   body {
     height: 100vh; /* Set the body height to 100% of the viewport height */
     overflow-y: auto;
@@ -424,7 +424,7 @@
   .listo {
     position: absolute;
     bottom: 190px;
-    left: calc(120% - 250px);
+    left: calc(-20% - 250px);
     width: 380px;
     font-size: 20px;
   }
@@ -433,7 +433,7 @@
     position: relative;
     padding: 0px;
     margin-bottom: -170px;
-    left: calc(100% - 350px);
+    left: calc(40% - 350px);
     width: 300px;
     font-size: 20px;
   }
