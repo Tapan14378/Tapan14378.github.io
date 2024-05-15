@@ -408,7 +408,7 @@
 }
 
 /* Add this at the end of your CSS file */
-@media (max-width: 450px) {
+@media (max-width: 380px) {
   body {
     height: 100vh; /* Set the body height to 100% of the viewport height */
     overflow-y: auto;
