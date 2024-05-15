@@ -534,7 +534,7 @@
 
   .listo {
     position: absolute;
-    bottom: -150px;
+    bottom: -250px;
     left: calc(80% - 280px);
     width: 500px;
     font-size: 500px;
@@ -543,7 +543,7 @@
   .content {
     position: relative;
     padding: 0px;
-    left: calc(55% - 350px);
+    left: calc(55% - 380px);
     margin-bottom: -170px;
     left: calc(420% - -340px);
     width: 350px;
