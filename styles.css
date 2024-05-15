@@ -480,7 +480,7 @@
   .listo {
     position: absolute;
     bottom: 150px;
-    left: calc(80% - 350px);
+    left: calc(0% - 350px);
     width: 300px;
   }
 
