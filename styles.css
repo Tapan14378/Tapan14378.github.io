@@ -426,7 +426,7 @@
     bottom: 190px;
     left: calc(40% - 250px);
     width: 380px;
-    font-size: 8px;
+    font-size: 30px;
   }
 
   .content {
@@ -481,7 +481,7 @@
     bottom: 150px;
     left: calc(-20% - 350px);
     width: 300px;
-    font-size: 10px;
+    font-size: 30px;
   }
 
   .content {
