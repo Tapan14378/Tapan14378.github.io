@@ -432,7 +432,6 @@
   .content {
     position: relative;
     padding: 0px;
-    left: calc(45% - 350px);
     margin-bottom: -170px;
     left: calc(100% - 350px);
     width: 300px;
@@ -480,17 +479,16 @@
   .listo {
     position: absolute;
     bottom: 150px;
-    left: calc(-10% - 350px);
+    left: calc(-20% - 350px);
     width: 300px;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .content {
     position: relative;
     padding: 0px;
-    left: calc(60% - 350px);
+    left: calc(100% - 350px);
     margin-bottom: -170px;
-    left: calc(85% - 350px);
     width: 300px;
     font-size: 20px;
   }
@@ -545,7 +543,6 @@
   .content {
     position: relative;
     padding: 0px;
-    left: calc(55% - 380px);
     margin-bottom: -170px;
     left: calc(420% - -340px);
     width: 350px;
