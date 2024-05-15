@@ -424,16 +424,16 @@
   .listo {
     position: absolute;
     bottom: 190px;
-    left: calc(80% - 250px);
+    left: calc(40% - 250px);
     width: 380px;
-    font-size: 15px;
+    font-size: 8px;
   }
 
   .content {
     position: relative;
     padding: 0px;
     margin-bottom: -170px;
-    left: calc(100% - 350px);
+    left: calc(140% - 350px);
     width: 300px;
     font-size: 20px;
   }
