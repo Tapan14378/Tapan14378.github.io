@@ -424,16 +424,16 @@
   .listo {
     position: absolute;
     bottom: 190px;
-    left: calc(40% - 250px);
+    left: calc(120% - 250px);
     width: 380px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .content {
     position: relative;
     padding: 0px;
     margin-bottom: -170px;
-    left: calc(140% - 350px);
+    left: calc(100% - 350px);
     width: 300px;
     font-size: 20px;
   }
@@ -463,7 +463,7 @@
     transform: none; /* Remove the vertical transformation */
   }
 }
-@media (min-width:450px) and (max-width:599px) {
+@media (min-width:380px) and (max-width:599px) {
   body {
     height: 100vh; /* Set the body height to 100% of the viewport height */
     overflow-y: auto;
