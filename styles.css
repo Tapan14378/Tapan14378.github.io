@@ -1,4 +1,6 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+  
+  body {
     margin: 0;
     background-color: black; /* Change background color to black */
     color: white; /* Change text color to white */
@@ -155,10 +157,9 @@ body {
   }
 
   .listo {
-    width: 700px;
     position: absolute;
     bottom: 250px; /* Adjust this value to set the distance from the bottom */
-    left: -50px; /* Adjust this value to set the distance from the left */
+    left: 20px; /* Adjust this value to set the distance from the left */
     text-align: center;
 }
   
@@ -230,7 +231,6 @@ body {
 
   }
 
-  @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
@@ -250,16 +250,6 @@ body {
   max-width: 900px;
   margin: 100px 50px 0 auto; 
   font-family: var(--font-sans);
-}
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .card {
@@ -308,7 +298,7 @@ body {
   background-image: url(https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 .card:nth-child(2):before {
-  background-image: url(https://img.freepik.com/free-vector/isometric-data-visualization-concept-background_23-2148099749.jpg?w=740&t=st=1715695158~exp=1715695758~hmac=2ed91a511f55fa9ffb4413005db673195c7181242e37ec052062243ea59baf82);
+  background-image: url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 .card:nth-child(3):before {
   background-image: url(https://images.unsplash.com/photo-1642229407672-32411805153f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -361,6 +351,7 @@ body {
   outline-offset: 3px;
 }
 
+
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
     transform: translateY(0);
@@ -405,67 +396,184 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /* Add this at the end of your CSS file */
-
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   body {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-
-  .content {
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+    overflow-y: auto;
     position: static;
-    transform: none;
-    top: auto;
-    left: auto;
-    text-align: auto;
   }
-
-  .content__container {
-    padding: 0 20px; /* Adjust padding for smaller screens */
-  }
-
   .profile {
-    position: static;
-    padding: 0;
-    text-align: auto;
+    position: relative;
+    padding: 20px;
+    left: calc(75% - 350px);
+    margin-bottom: 250px;
   }
 
   .listo {
-    position: sticky;
-    width: auto;
-    bottom: auto;
-    left: auto;
-    text-align: auto;
-    margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    position: absolute;
+    bottom: 150px;
+    left: calc(100% - 350px);
+    width: 300px;
   }
 
-  .roles {
-    height: auto;
-    overflow: visible;
-  }
-
-  .waves-container {
-    display: none; /* Hide waves on smaller screens */
+  .content {
+    position: relative;
+    padding: 0px;
+    left: calc(75% - 350px);
+    margin-bottom: -170px;
+    left: calc(100% - 350px);
+    width: 300px;
+    font-size: 20px;
   }
 
   .page-content {
-    margin: 20px auto; /* Adjust margin for smaller screens */
+    position: static;
+    padding-left: 50px; /* or margin-left: 20px; */
+    width: calc(100% - 40px);
+  }
+
+  .waves-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
   }
 
   .card {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    flex-direction: column;
-    align-items: auto;
-  }
-
-  .card:before {
-    background-position: center; /* Center background image */
+    height: auto; /* Remove fixed height */
+    padding: 1rem; /* Adjust padding */
+    flex-direction: column; /* Stack card content vertically */
+    align-items: center; /* Center align content */
   }
 
   .content2 {
-    padding: 1rem 0;
-    transform: none;
+    transform: none; /* Remove the vertical transformation */
+  }
+}
+@media (min-width:450px) and (max-width:599px) {
+  body {
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+    overflow-y: auto;
+    position: static;
+  }
+  .profile {
+    position: relative;
+    padding: 20px;
+    left: calc(65% - 350px);
+    margin-bottom: 250px;
+  }
+
+  .listo {
+    position: absolute;
+    bottom: 150px;
+    left: calc(80% - 350px);
+    width: 300px;
+  }
+
+  .content {
+    position: relative;
+    padding: 0px;
+    left: calc(55% - 350px);
+    margin-bottom: -170px;
+    left: calc(85% - 350px);
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .page-content {
+    position: static;
+    padding-left: 20px; /* or margin-left: 20px; */
+    width: calc(100% - 40px);
+  }
+
+  .waves-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .card {
+    height: auto; /* Remove fixed height */
+    padding: 1rem; /* Adjust padding */
+    flex-direction: column; /* Stack card content vertically */
+    align-items: center; /* Center align content */
+  }
+
+  .content2 {
+    transform: none; /* Remove the vertical transformation */
+  }
+}
+@media (min-width:599px) and (max-width:799px) {
+  body {
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+    width: 0vh;
+    overflow-y: auto;
+    position: static;
+  }
+  .profile {
+    position: relative;
+    padding: 300px;
+    left: calc(200% - 35px);
+    margin-bottom: 250px;
+  }
+
+  .listo {
+    position: absolute;
+    bottom: -150px;
+    left: calc(80% - 280px);
+    width: 500px;
+    font-size: 500px;
+  }
+
+  .content {
+    position: relative;
+    padding: 0px;
+    left: calc(55% - 350px);
+    margin-bottom: -170px;
+    left: calc(420% - -340px);
+    width: 350px;
+    font-size: 30px;
+  }
+
+  .page-content {
+    position: relative;
+    flex-direction: column; 
+    padding-left: 30px; /* or margin-left: 20px; */
+    width: calc(100% - 200px);
+  }
+
+  .waves-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .card {
+    height: auto; /* Remove fixed height */
+    padding: 1rem; /* Adjust padding */
+    flex-direction: column; /* Stack card content vertically */
+    align-items: center; /* Center align content */
+    width: 150vh;
+  }
+
+  .content2 {
+    transform: none; /* Remove the vertical transformation */
   }
 }
