@@ -424,7 +424,7 @@
   .listo {
     position: absolute;
     bottom: 190px;
-    left: calc(20px - 250px);
+    left: calc(120px - 250px);
     width: 380px;
     font-size: 20px;
   }
@@ -433,7 +433,7 @@
     position: relative;
     padding: 0px;
     margin-bottom: -170px;
-    left: calc(20px - 350px);
+    left: calc(220px - 350px);
     width: 300px;
     font-size: 20px;
   }
