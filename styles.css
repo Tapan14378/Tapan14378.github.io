@@ -424,7 +424,7 @@
   .listo {
     position: absolute;
     bottom: 190px;
-    left: calc(380% - 350px);
+    left: calc(110% - 350px);
     width: 380px;
     font-size: 15px;
   }
