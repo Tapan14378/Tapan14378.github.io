@@ -408,7 +408,7 @@
 }
 
 /* Add this at the end of your CSS file */
-@media (max-width: 379px) {
+@media (max-width: 320px) {
   body {
     height: 100vh; /* Set the body height to 100% of the viewport height */
     overflow-y: auto;
@@ -416,26 +416,25 @@
   }
   .profile {
     position: relative;
-    padding: 20px;
-    left: calc(75% - 350px);
+    padding: 10px;
+    left: calc(260px - 350px);
     margin-bottom: 250px;
   }
 
   .listo {
     position: absolute;
-    bottom: 190px;
-    left: calc(260px - 300px);
-    width: 380px;
-    font-size: 20px;
+    bottom: 150px;
+    left: calc(380px - 350px);
+    width: 300px;
   }
 
   .content {
     position: relative;
     padding: 0px;
+    left: calc(360px - 350px);
     margin-bottom: -170px;
-    left: calc(450px - 550px);
     width: 300px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .page-content {
@@ -463,7 +462,64 @@
     transform: none; /* Remove the vertical transformation */
   }
 }
-@media (min-width:380px) and (max-width:599px) {
+
+@media (min-width:321px) and (max-width:450px) {
+  body {
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+    overflow-y: auto;
+    position: static;
+  }
+  .profile {
+    position: relative;
+    padding: 20px;
+    left: calc(260px - 350px);
+    margin-bottom: 250px;
+  }
+
+  .listo {
+    position: absolute;
+    bottom: 150px;
+    left: calc(380px - 350px);
+    width: 300px;
+    font-size: 10px;
+  }
+
+  .content {
+    position: relative;
+    padding: 0px;
+    left: calc(380px - 350px);
+    margin-bottom: -170px;
+    width: 280px;
+    font-size: 15px;
+  }
+
+  .page-content {
+    position: static;
+    padding-left: 20px; /* or margin-left: 20px; */
+    width: calc(100% - 40px);
+  }
+
+  .waves-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .card {
+    height: auto; /* Remove fixed height */
+    padding: 1rem; /* Adjust padding */
+    flex-direction: column; /* Stack card content vertically */
+    align-items: center; /* Center align content */
+  }
+
+  .content2 {
+    transform: none; /* Remove the vertical transformation */
+  }
+}
+
+@media (min-width:450px) and (max-width:599px) {
   body {
     height: 100vh; /* Set the body height to 100% of the viewport height */
     overflow-y: auto;
@@ -479,16 +535,16 @@
   .listo {
     position: absolute;
     bottom: 150px;
-    left: calc(120px - 350px);
+    left: calc(80% - 350px);
     width: 300px;
-    font-size: 30px;
   }
 
   .content {
     position: relative;
     padding: 0px;
-    left: calc(60px - 350px);
+    left: calc(55% - 350px);
     margin-bottom: -170px;
+    left: calc(85% - 350px);
     width: 300px;
     font-size: 20px;
   }
@@ -543,6 +599,7 @@
   .content {
     position: relative;
     padding: 0px;
+    left: calc(55% - 350px);
     margin-bottom: -170px;
     left: calc(420% - -340px);
     width: 350px;
