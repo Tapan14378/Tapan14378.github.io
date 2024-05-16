@@ -478,10 +478,10 @@
 
   .listo {
     position: absolute;
-    bottom: 220px;
+    bottom: 190px;
     left: calc(380px - 350px);
-    width: 300px;
-    font-size: 10px;
+    width: 330px;
+    font-size: 8px;
   }
 
   .content {
