@@ -535,10 +535,10 @@
 
   .listo {
     position: absolute;
-    bottom: 280px;
+    bottom: 250px;
     left: calc(380px - 350px);
-    width: 300px;
-    font-size: 10px;
+    width: 280px;
+    font-size: 80px;
   }
 
   .content {
