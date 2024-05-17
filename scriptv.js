@@ -15,7 +15,8 @@ var paragraphTexts = [
   
   '<p>Interactive filters for customizable analysis based on year, product, and location.</p>' +
   
-  '<p>The dashboard empowers stakeholders to gain actionable insights and drive continuous improvement in sales performance. <a href="https://public.tableau.com/shared/F43GXW2NC?:display_count=n&:origin=viz_share_link">Link to dashboard</a></p>'
+  '<p>The dashboard empowers stakeholders to gain actionable insights and drive continuous improvement in sales performance. <a href="https://public.tableau.com/shared/F43GXW2NC?:display_count=n&:origin=viz_share_link">Link to dashboard</a></p>',
+  '<p>This is test for the other box</p>',
 ];
 
 // initiate the process
@@ -194,3 +195,14 @@ function resize() {
   windowWidth = window.innerWidth;
   windowHeight = window.innerHeight;
 }
+
+
+var instaFeed = new Instafeed({
+  get: 'user',
+  userId: 34139106,
+  accessToken: '34139106.467ede5.2e8f6b6a9cf846f6bd23169b624aca22',
+  target: 'instafeed',
+  sortBy: 'most-liked',
+  limit: 200,
+  resolution: 'thumbnail'
+});	instaFeed.run();
